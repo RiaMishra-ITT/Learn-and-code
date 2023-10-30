@@ -14,7 +14,6 @@ public class AssignmentOne {
  
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        List<String> entityTypes = Arrays.asList("email", "server", "something");
         Entity entity = new Entity();
         System.out.print("Enter mail"); 
         entity.emailId = sc.nextLine();
@@ -26,7 +25,7 @@ public class AssignmentOne {
         entity.totalSentMail = sc.nextDouble(); 
         System.out.print("Enter total spam mail");
         entity.totalSpamMail = sc.nextDouble();
-        Response response = getCarbonFootprint(entityTypes,entity);
+        Response response = getCarbonFootprint(entity);
         System.out.println("Email " + response.emailId);
         System.out.println("Source " +response.source);
         System.out.println("Inbox " + response.inbox);
@@ -34,8 +33,7 @@ public class AssignmentOne {
         System.out.println("Spam " + response.spam);
     }
     
-    public static Response getCarbonFootprint(List<String> entitytype, Entity entity) {
-        double totalCarbonFootprint = 0;
+    public static Response getCarbonFootprint(Entity entity) {
         double standardMailCarbon = 4;
         double spamMailCarbon = 0.3;
         Response response = new Response();
