@@ -23,7 +23,7 @@ public class CarbonCalculator {
         return response;
     }
 
-    public static String getCarbonFootprintOfMail(double totalMail, double perMailCarbonEmitted)
+    public static String getCarbonFootprintOfMail(double perMailCarbonEmitted,double totalMail)
     {
         return String.valueOf((perMailCarbonEmitted * totalMail)/1000) + "KG";
     }
