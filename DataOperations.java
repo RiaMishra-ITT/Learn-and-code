@@ -1,7 +1,7 @@
 public class UserOperations {
-    int intValue;
-    double doubleValue;
-    String strValue;
+    int firstNumber;
+    double secondNumber;
+    String text;
 
     public void add(int firstNumber, int secondNumber) {
         int result = firstNumber + secondNumber;
@@ -9,19 +9,19 @@ public class UserOperations {
     }
 
     public void displayUpperCase(String input) {
-        strValue = input.toUpperCase();
-        System.out.println("Updated String: " + strValue);
+        text = input.toUpperCase();
+        System.out.println("Updated String: " + text);
     }
 }
 
 public class DataOperations {
     public static void main(String[] args) {
         UserOperations userOperations = new UserOperations();
-        userOperations.intValue = 10;
-        userOperations.doubleValue = 20.5;
-        userOperations.strValue = "hello";
+        userOperations.firstNumber = 10;
+        userOperations.secondNumber = 20.5;
+        userOperations.text = "hello";
         
-        userOperations.add(userOperations.intValue, 5);
+        userOperations.add(userOperations.firstNumber, 5);
         userOperations.displayUpperCase("world");
     }
 }
