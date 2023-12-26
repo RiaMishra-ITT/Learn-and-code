@@ -6,7 +6,7 @@ package com.mycompany.clientswitch;
 import com.mycompany.clientswitch.Interfaces.Device;
 import Devices.Laptop;
 import Devices.SmartPhone;
-import Enums;
+import Enums.DeviceType;
 /**
  *
  * @author ria.mishra

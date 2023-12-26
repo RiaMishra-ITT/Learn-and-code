@@ -4,7 +4,7 @@
 
 package com.mycompany.clientswitch;
 import com.mycompany.clientswitch.Interfaces.Device;
-import Enums.DeviceEnums;
+import Enums.DeviceType;
 /**
  *
  * @author ria.mishra
